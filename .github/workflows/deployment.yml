@@ -13,3 +13,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
+      - uses: npm run test
+      - uses: npm run build
+      - uses: npm run start
