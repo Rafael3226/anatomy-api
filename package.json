@@ -2,24 +2,24 @@
   "name": "anatomy-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/src/server.js",
   "scripts": {
+    "test": "jest",
     "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "test": "jest"
+    "start": "node dist/src/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/server.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^17.0.31",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.18.1",
     "sequelize": "^6.19.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.31",
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
